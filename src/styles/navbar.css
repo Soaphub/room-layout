@@ -1,0 +1,111 @@
+/* === Navbar div === */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: var(--spacing-xsm);
+}
+
+/* === Nabar title === */
+.nav-title{
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    color: white;
+    margin-left: var(--spacing-lg);
+    margin-right: var(--spacing-lg);
+}
+.nav-title:hover{
+    color: white;
+}
+
+/* === Navbar menu === */
+.nav-link{
+    font-size: var(--font-size-xsm);
+    font-weight: 500;
+    color: white;
+    margin-right: var(--spacing-xsm);
+}
+.navbar-nav .nav-link.active, .nav-link:hover{
+    color: white;
+    border-bottom: 0.1rem solid white;
+}
+
+
+/* === Breakpoints === */
+
+@media (max-width: 992px) {
+    /* === Navbar div === */
+    .navbar{
+        width: 100%;
+        margin: 0;
+        padding: var(--spacing-xsm) var(--spacing-xsm);
+    }
+    .navbar-edit{
+        background-color: white; 
+    }
+    .navbar .container-fluid{
+        flex-wrap: nowrap;
+        padding: 0;
+        position: relative;
+    }
+    /* === Nabar title === */
+    .nav-title{
+        margin-right: calc( 100vw / 2.5);
+        display: block;
+    }
+    /* === Navbar menu === */
+    .navbar-menu{
+        position: absolute;
+        left: 0;
+        margin-left: var(--spacing-xxlg);
+        animation: carousel 1s forwards ease-in; 
+    }
+    @keyframes carousel {
+        0%{ opacity: 0;}
+        75%{opacity: 0.5;}
+        100%{opacity: 1;}
+    }
+    .navbar-menu ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-link, .navbar-nav .nav-link.active, .nav-link:hover{
+        color: black;
+        border: 0;
+        margin-left: var(--spacing-xsm);
+    }
+    /* === Navbar toggle button ===*/
+    .toggle-btn, .toggle-btn:focus{
+        border: 0;
+        box-shadow:none;
+        z-index: 1;
+    }
+   .toggle-btn .hamburger{
+        width: var(--font-size-sm);
+        height: var(--font-size-sm);
+   }
+}
+
+@media (max-width: 575.98px) { 
+    /* === Navbar div === */
+    .navbar-edit, .navbar{
+        padding: 1.4rem 0.7rem;
+    }
+    /* === Nabar title === */
+    .nav-title{
+        margin-right: calc( 100vw / 2.75);
+        display: block;
+    }
+    /* === Navbar menu === */
+    .navbar-menu{
+        margin-left: var(--spacing-xlg);
+    }
+    .nav-link{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    /* === Navbar toggle button ===*/
+    .toggle-btn{
+        padding: 0;
+    } 
+}

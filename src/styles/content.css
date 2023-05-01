@@ -1,0 +1,120 @@
+/* ==============    
+    Upper Content
+    ==============*/
+
+
+/* === Upper content Image === */
+.main img{
+    width: 100%;
+    height: calc( 100vh / 1.6);
+}
+
+/* === Upper content carousel === */
+.carousel-content{
+    position: relative;
+}
+/* Carousel slide item  */
+.carousel-item{ 
+    animation: carousel 1s ease-in;  
+}
+@keyframes carousel {
+    0%{ opacity: 0;}
+    75%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+/* .carousel content second col */
+.second-col{
+    padding: var(--spacing-xxlg) var(--spacing-xlg);
+}
+.second-col h2:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 63%);
+}
+
+/* === Upper content buttons === */
+.button-div{
+    position: absolute;
+    bottom: 0;
+    margin-left: calc( 100vw * 0.577);
+}
+.prev-button, .next-button{
+    position: static;
+    background-color: black;
+    display: inline;
+    width: initial;
+    padding: var(--spacing-xsm) var(--spacing-sm);
+    bottom: 0;
+    opacity: 1;
+}
+.prev-button:hover, .next-button:hover{
+    background-color: hsl(0, 0%, 27%);
+}
+
+
+
+
+/* =============
+    Footer Content
+    =============== */
+
+
+/* === Footer content images === */
+.footer img{
+    width: 100%;
+    height: calc( 100vh / 2.7);
+}
+
+/* === Footer about content === */
+.about-content{
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+.about-content h2{
+    margin-bottom: var(--spacing-xsm);
+}
+.about-content p{
+    margin-bottom: 0;
+}
+
+
+/* === Breakpoints ===*/
+
+@media (max-width: 992px) {
+    /* === Upper content Image === */
+    .main img{
+        aspect-ratio: 1/0.6;
+    }
+    .main img, .footer img{
+        width: 100%;
+        height: auto;
+    }
+    /* === Upper content buttons === */
+    .button-div{
+        position: absolute;
+        right:0;
+        top:0;
+        margin-right: 12px;
+        margin-left: 0;
+    }
+    .prev-button .carousel-control-prev-icon,
+    .next-button .carousel-control-next-icon{
+        width: var(--spacing-sm);
+        height: var(--spacing-sm);
+    }
+    /* === Footer content images === */
+    .footer img{
+        aspect-ratio: 1/0.55;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    /* === Upper content Image === */
+    .main img{
+        aspect-ratio: 1;
+    }
+    /* === Upper content buttons === */
+    .prev-button .carousel-control-prev-icon,
+    .next-button .carousel-control-next-icon{
+        width: var(--spacing-xsm);
+        height: var(--spacing-xsm);
+    }
+}

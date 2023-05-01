@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+
+    --spacing-xxlg :7rem;
+    --spacing-xlg :6rem;
+    --spacing-lg : 5rem;
+    --spacing-md : 4.5rem;
+    --spacing-sm : 3rem;
+    --spacing-xsm : 2rem;
+
+    --font-size-lg: 3.5rem;
+    --font-size-md: 2.5rem;
+    --font-size-sm: 1.5rem;
+    --font-size-xsm: 1.3rem;
+    
+    --font-letter-spacing: 1.15rem;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* === Typography ====*/
+h1{
+    font-size: var(--font-size-lg);
+    line-height: 1;
+    margin-bottom: var(--spacing-xsm);
+    font-weight: 700;
+    color: black;
+}
+h2{
+    font-size: var(--font-size-sm);
+    letter-spacing: var(--font-letter-spacing);
+    font-weight: 600;
+    color: black;
+}
+p{
+    font-size: var(--font-size-xsm);
+    margin-bottom: var(--spacing-xsm);
+    font-weight: 500;
+    color: hsl(0, 0%, 63%);
+}
+
+
+/* === Breakpoints ===*/
+
+/* Medium devices (tablets, 576px and below) */
+@media (max-width: 575.98px) { 
+    :root{
+
+        --spacing-xxlg :3rem;
+        --spacing-xlg :2rem;
+        --spacing-lg : 1.25rem;
+        --spacing-md : 1.15rem;
+        --spacing-sm : 1rem;
+        --spacing-xsm : 0.95rem;
+   
+        --font-size-lg: 1.5rem;
+        --font-size-md: 1.15rem;
+        --font-size-sm: 0.95rem;
+        --font-size-xsm: 0.9rem;
+        
+        --font-letter-spacing: 0.5rem;
+    }
+ }
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+    :root{
+
+        --spacing-xxlg :5rem;
+        --spacing-xlg :4rem;
+        --spacing-lg : 3rem;
+        --spacing-md : 2.25rem;
+        --spacing-sm : 2rem;
+        --spacing-xsm : 1.15rem;
+
+        --font-size-lg: 2.25rem;
+        --font-size-md: 1.25rem;
+        --font-size-sm: 1rem;
+        --font-size-xsm: 0.9rem;
+        
+        --font-letter-spacing: 0.6rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    :root{
+
+    --spacing-xxlg :6rem;
+    --spacing-xlg :5rem;
+    --spacing-lg : 4rem;
+    --spacing-md : 3.75rem;
+    --spacing-sm : 2.5rem;
+    --spacing-xsm : 1.75rem;
+
+    --font-size-lg: 3.25rem;
+    --font-size-md: 2.25rem;
+    --font-size-sm: 1.25rem;
+    --font-size-xsm: 1.15rem;
+    
+    --font-letter-spacing: 1rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    :root{
+
+    --spacing-xxlg :3rem;
+    --spacing-xlg :2rem;
+    --spacing-lg : 1.5rem;
+    --spacing-md : 1.25rem;
+    --spacing-sm : 1.15rem;
+    --spacing-xsm : 1rem;
+
+    --font-size-lg: 2.25rem;
+    --font-size-md: 1.25rem;
+    --font-size-sm: 1rem;
+    --font-size-xsm: 0.9rem;
+    
+    --font-letter-spacing: 0.6rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    :root{
+
+     --spacing-xxlg :4rem;
+     --spacing-xlg :3rem;
+     --spacing-lg : 2rem;
+     --spacing-md : 1.75rem;
+     --spacing-sm : 1.5rem;
+     --spacing-xsm : 1.25rem;
+
+     --font-size-lg: 2.5rem;
+     --font-size-md: 1.5rem;
+     --font-size-sm: 1rem;
+     --font-size-xsm: 0.9rem;
+     
+     --font-letter-spacing: 0.8rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    :root{
+
+    --spacing-xxlg :5rem;
+    --spacing-xlg :4rem;
+    --spacing-lg : 3rem;
+    --spacing-md : 2.75rem;
+    --spacing-sm : 2.25rem;
+    --spacing-xsm : 1.5rem;
+
+    --font-size-lg: 3rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 1.15rem;
+    --font-size-xsm: 1rem;
+    
+    --font-letter-spacing: 0.9rem;
+    } 
+}
+
+/* XX-Large devices (larger desktops, 1600px and up) */
+@media (min-width: 1600px) { 
+    :root{
+
+    --spacing-xxlg :6rem;
+    --spacing-xlg :5rem;
+    --spacing-lg : 4rem;
+    --spacing-md : 3.75rem;
+    --spacing-sm : 2.5rem;
+    --spacing-xsm : 1.75rem;
+
+    --font-size-lg: 3.25rem;
+    --font-size-md: 2.25rem;
+    --font-size-sm: 1.25rem;
+    --font-size-xsm: 1.15rem;
+    
+    --font-letter-spacing: 1rem;
+    } 
+}
+
