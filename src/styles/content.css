@@ -80,13 +80,10 @@
 
 @media (max-width: 992px) {
     /* === Upper content Image === */
-    .main img{
-        height: 100%;
-        object-fit: contain;
-    }
     .main img, .footer img{
         height: 100%;
-        height: auto;
+        width: 100%;
+        aspect-ratio: 1;
     }
     /* === Upper content buttons === */
     .button-div{
@@ -101,18 +98,14 @@
         width: var(--spacing-sm);
         height: var(--spacing-sm);
     }
-    /* === Footer content images === */
-    .footer img{
-        height: auto;
-        object-fit: contain;
-    }
 }
 
 @media (max-width: 575.98px) { 
     /* === Upper content Image === */
     .main img{
-        height: auto;
-        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
     }
     /* === Upper content buttons === */
     .prev-button .carousel-control-prev-icon,
