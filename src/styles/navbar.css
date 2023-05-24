@@ -41,7 +41,8 @@
         padding: var(--spacing-xsm) var(--spacing-xsm);
     }
     .navbar-edit{
-        background-color: white; 
+        background-color: white;
+        animation: carousel 1s forwards ease-in;  
     }
     .navbar .container-fluid{
         flex-wrap: nowrap;

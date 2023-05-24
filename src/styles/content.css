@@ -6,7 +6,7 @@
 /* === Upper content Image === */
 .main img{
     width: 100%;
-    height: calc( 100vh / 1.6);
+    height: calc( 100vh / 1.57);
 }
 
 /* === Upper content carousel === */
