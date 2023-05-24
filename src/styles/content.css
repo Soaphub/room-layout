@@ -81,7 +81,8 @@
 @media (max-width: 992px) {
     /* === Upper content Image === */
     .main img{
-        aspect-ratio: 1/0.6;
+        height: auto;
+        object-fit: contain;
     }
     .main img, .footer img{
         width: 100%;
@@ -102,14 +103,16 @@
     }
     /* === Footer content images === */
     .footer img{
-        aspect-ratio: 1/0.55;
+        height: auto;
+        object-fit: contain;
     }
 }
 
 @media (max-width: 575.98px) { 
     /* === Upper content Image === */
     .main img{
-        aspect-ratio: 1;
+        height: auto;
+        object-fit: contain;
     }
     /* === Upper content buttons === */
     .prev-button .carousel-control-prev-icon,
